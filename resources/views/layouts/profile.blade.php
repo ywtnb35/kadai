@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type"text/css">
         
         <!-- Styles -->
-        <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
     </head>
     <body>
@@ -36,10 +36,31 @@
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav ms-auto"></ul>
                         <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav"></ul>
+                        <ul class="navbar-nav">
+                        @guest
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ ('login') }}</a></li>
+                        @else
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="falese">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                        {{ __('messages.logout') }}
+                                    </a>
+                                         
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                        </ul>
                     </div>
                 </div>
             </nav>
+            
             <main class="py-4">
                 @yield('content')
             </main>
