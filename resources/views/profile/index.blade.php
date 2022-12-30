@@ -11,12 +11,12 @@
                         <div class="col-md-6">
                             <div class="caption mx-auto">
                                 <div class="title p-2">
-                                    <h1>{{ Str::limit($headline->title, 70) }}</h1>
+                                    <h1>{{ Str::limit($headline->name, 70) }}</h1>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <p class="body mx-auto">{{ Str::limit($headline->body, 650) }}</p>
+                            <p class="body mx-auto">{{ Str::limit($headline->gender, 650) }}</p>
                         </div>
                     </div>
                 </div>

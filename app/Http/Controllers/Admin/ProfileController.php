@@ -49,7 +49,7 @@ class ProfileController extends Controller
         $profile_form =$request->all();              // 3.リクエストで受け取ったすべての情報を変数($profile_form)に格納する
         unset($profile_form['_token']);              // 4.すべての情報の中からtoken情報をはずす
         
-        $profile->fill($profile_form)->save();       // 5.プロフィールモデルに関連付けて保存する
+        $profile->fill($profile_form)->save();       // 5.プロフィールモデルに代入して保存する
         
         $history = new ProfileHistory();             // 6.プロフィールヒストリーに新しく行をつくる
         $history->profile_id = $profile->id;         // 7.profilehistoryモデルのidとprofileモデルのidを関連付ける
