@@ -1,0 +1,50 @@
+.introduction {
+    color: #000;
+}
+
+.navbar-laravel {
+    background-color: #000;
+}
+
+.header {
+  .logo {
+    width: 120px;
+    height: 82px;
+  }
+}
+
+.headline{
+　　.caption{
+        position: relative;
+        width: 350px;
+    }
+   .name .gender .hobby {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        h1 {
+        color: #fff;
+        font-size: 1.00em;
+        }
+   }
+    .introduction {
+        font-size: 0.8em;
+        }
+}
+.posts{ 
+    .post {
+        .date {
+            font-size: 0.6em;
+            color: #999999;
+        }
+        .name .gender .hobby {
+            font-size: 1.0em;
+            font-weight: bold;
+        }
+        .introduction {
+            font-size: 0.8em;
+        }
+    }
+}

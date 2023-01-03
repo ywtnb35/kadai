@@ -20,6 +20,7 @@
         <!-- Styles -->
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/profilefront.css') }}"　rel="stylesheet">
     </head>
     <body>
         <div id="app">

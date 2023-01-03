@@ -10,13 +10,27 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="caption mx-auto">
-                                <div class="title p-2">
+                                <div class"name p-2">
                                     <h1>{{ Str::limit($headline->name, 70) }}</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <p class="body mx-auto">{{ Str::limit($headline->gender, 650) }}</p>
+                        <div class="col-md-2">
+                            <div class="caption mx-auto">
+                                <div class="gender p-2">
+                                    <h1>{{ Str::limit($headline->gender,70) }}</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="caption mx-auto">
+                                <div class="hobby p-2">
+                                    <h1>{{ Str::limit($headline->hobby,70) }}</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <p class="introduction mx-auto">{{ Str::limit($headline->introduction, 650) }}</p>
                         </div>
                     </div>
                 </div>
@@ -32,11 +46,17 @@
                                 <div class="date">
                                     {{ $post->updated_at->format('Y年m月d日') }}
                                 </div>
-                                <div class="title">
-                                    {{ str::limit($post->title, 150) }}
+                                <div class="name">
+                                    {{ str::limit($post->name, 10) }}
                                 </div>
-                                <div class="body mt-3">
-                                     {{ Str::limit($post->body, 1500) }}
+                                <div class="gender">
+                                    {{ str::limit($post->gender,10) }}
+                                </div>
+                                <div class="hobby">
+                                    {{ str::limit($post->hobby,100) }}
+                                </div>
+                                <div class="introduction mt-3">
+                                     {{ Str::limit($post->introduction, 1500) }}
                                 </div>
                             </div>
                         </div>
