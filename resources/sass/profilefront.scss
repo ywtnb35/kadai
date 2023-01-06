@@ -7,10 +7,10 @@
 }
 
 .header {
-  .logo {
-    width: 120px;
-    height: 82px;
-  }
+    .logo {
+        width: 120px;
+        height: 85px;
+    }
 }
 
 .headline{
@@ -24,14 +24,14 @@
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.6);
-        h1 {
-        color: #fff;
-        font-size: 1.00em;
-        }
-   }
+            h1 {
+                color: #fff;
+                font-size: 1.00em;
+            }
+    }
     .introduction {
         font-size: 0.8em;
-        }
+    }
 }
 .posts{ 
     .post {
@@ -39,9 +39,13 @@
             font-size: 0.6em;
             color: #999999;
         }
-        .name .gender .hobby {
-            font-size: 1.0em;
-            font-weight: bold;
+        .name {
+            .gender {
+                .hobby {
+                    font-size: 1.0em;
+                    font-weight: bold;
+                }
+            }
         }
         .introduction {
             font-size: 0.8em;

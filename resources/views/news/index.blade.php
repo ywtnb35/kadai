@@ -21,6 +21,7 @@
                         </div>
                         <div class="col-md-6">
                             <p class="body mx-auto">{{ Str::limit($headline->body, 650) }}</p>
+                            {{ $headline->updated_at }}
                         </div>
                     </div>
                 </div>
@@ -35,6 +36,7 @@
                             <div class="text col-md-6">
                                 <div class="date">
                                     {{ $post->updated_at->format('Y年m月d日') }}
+                                    {{ $post->updated_at }}
                                 </div>
                                 <div class="title">
                                     {{ str::limit($post->title, 150) }}

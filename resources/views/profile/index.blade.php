@@ -8,28 +8,28 @@
             <div class="row">
                 <div class="headline col-md-10 mx-auto">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="caption mx-auto">
                                 <div class"name p-2">
                                     <h1>{{ Str::limit($headline->name, 70) }}</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-4">
                             <div class="caption mx-auto">
                                 <div class="gender p-2">
                                     <h1>{{ Str::limit($headline->gender,70) }}</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-4">
                             <div class="caption mx-auto">
                                 <div class="hobby p-2">
                                     <h1>{{ Str::limit($headline->hobby,70) }}</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-4">
                             <p class="introduction mx-auto">{{ Str::limit($headline->introduction, 650) }}</p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                                 <div class="hobby">
                                     {{ str::limit($post->hobby,100) }}
                                 </div>
-                                <div class="introduction mt-3">
+                                <div class="introduction mt-4">
                                      {{ Str::limit($post->introduction, 1500) }}
                                 </div>
                             </div>
